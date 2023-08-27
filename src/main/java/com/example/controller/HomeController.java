@@ -15,4 +15,8 @@ public class HomeController {
         model.addAttribute("user", loginUser.getUser());
         return "home";
     }
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "admin/index";
+    }
 }
